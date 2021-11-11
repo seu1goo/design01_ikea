@@ -1,0 +1,361 @@
+@media screen and (max-width: 640px) {
+
+	/*reset*/
+	.inner {
+		width: 90%;
+	}
+
+	/*header*/
+	header {
+		height: 50px;
+		padding: 15px 20px;
+	}
+
+	header .menuBar {
+		left: 10px;
+		font-size: 24px;
+	}
+
+	header .menuClose {
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		font-size: 26px;
+		color: #003399;
+		display: none;
+	}
+
+	header .logo {
+		position: absolute;
+		top: 50%;
+		left: 54%;
+		width: 122px;
+		height: 30px;
+	}
+
+	header .logo img {
+		height: 100%;
+	}
+
+	header .iconArea li {
+		display: none;
+	}
+
+	header .iconArea .search {
+		display: block;
+		width: 23px;
+		height: 23px;
+	}
+
+	header .iconArea .search input {
+		display: none;
+	}
+
+	header .iconArea .search a img {
+		top: 42%;
+		right: -120%;
+		width: 100%;
+		display: block;
+	}
+
+	header nav {
+		position: fixed;
+		top: 49px;
+	}
+
+	header nav .gnb {
+		height: 100vh;
+		padding: 10px;
+	}
+
+	header nav .gnb .gnbTit {
+		width: 100%;
+		height: 30px;
+		font-size: 22px;
+	}
+
+	header nav .gnb > li {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	header nav .gnb > li:first-child {
+		margin-bottom: 0;
+	}
+
+	header nav .gnb > li > a {
+		margin-bottom: 4px;
+		font-size: 18px;
+	}
+
+	header nav .gnb > li > .sub > li > a {
+		font-size: 16px;
+	}
+
+	header nav .gnb li .sub > li > .subDepth li {
+		margin: 5px 9px 0 0;
+	}
+
+	header nav .gnb li .sub > li > .subDepth li + li > a:before {
+		font-size: 12px;
+		margin-right: 9px;
+	}
+
+	header nav .gnb > li > .sub > li > .subDepth > li > a {
+		margin-bottom: 5px;
+		font-size: 13px;
+	}
+
+	header nav .gnb .ikeaMenu {
+		margin-top: 20px;
+	}
+
+	header nav .gnb .ikeaMenu:before {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: #ccc;
+		margin-bottom: 15px;
+	}
+
+	header nav .gnb .ikeaMenu li {
+		width: 48.5%;
+		height: 120px;
+		margin: 0 3% 3% 0;
+	}
+
+	header nav .gnb .ikeaMenu li:nth-child(3),
+	header nav .gnb .ikeaMenu li:nth-child(4),
+	header nav .gnb .ikeaMenu li:nth-child(5) {
+		width: 31.3%;
+	}
+
+	header nav .gnb .ikeaMenu li:nth-child(2),
+	header nav .gnb .ikeaMenu li:nth-child(5) {
+		margin-right: 0;
+	}
+
+	header nav .gnb .ikeaMenu li a {
+		line-height: 120px;
+		font-size: 16px;
+	}
+
+	header nav .gnb .ikeaMenu li:nth-child(4) {
+		background-position: 0;
+	}
+
+	header nav .gnb .ikeaMenu li:nth-child(5) {
+		background-position: 0;
+	}
+
+	/*space*/
+	.space .spaceVisual {
+		height: 100vh;
+		background: url(../_img/pc_room_space.jpg) no-repeat 40% center / cover;
+	}
+
+	.space .spaceVisual .spaceText {
+		top: 50%;
+		right: 5%;
+	}
+
+	.space .spaceVisual .spaceText h2 {
+		margin-bottom: 20px;
+		font: 40px 'Lato', sans-serif;
+		font-weight: 300;
+	}
+
+	.space .spaceVisual .spaceText p {
+		margin-bottom: 25px;
+		font-size: 16px;
+		font-weight: 100;
+	}
+
+	.space .spaceVisual .spaceText a {
+		width: 200px;
+		font-size: 16px;
+	}
+
+	.space .spaceMenu {
+		padding: 60px 0 120px;
+	}
+
+	.space .spaceMenu ul li {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+
+	.space .spaceMenu ul li .spaceImg {
+		position: relative;
+		height: 150px;
+		overflow: hidden;
+	}
+
+	.space .spaceMenu ul li .spaceImg img {
+		position: absolute;
+		bottom: -50%;
+		width: 100%;
+	}
+
+	.space .spaceMenu ul li a {
+		height: 31px;
+		margin-top: 5px;
+		font: 26px 'Lato', sans-serif;
+	}
+
+	.space .spaceMenu ul li p {
+		text-align: right;
+		padding-top: 40px;
+	}
+
+	/*series*/
+	.series {
+		height: 100vh;
+		margin-bottom: 120px;
+	}
+
+	.series article div .seriesText {
+		width: 92%;
+		height: 67%;
+		padding: 30px 5px 40px;
+	}
+
+	.series article div .seriesText h3 {
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+
+	.series article div .seriesText strong {
+		font-size: 13px;
+		line-height: 0.8;
+	}
+
+	.series article div .seriesText p {
+		margin: 10px 0 30px;
+		font-size: 12px;
+	}
+
+	.series article div .seriesText a {
+		width: 200px;
+		margin: 20px auto;
+		font-size: 15px;
+	}
+
+	.series article div .seriesText .seriesImg {
+		width: 100%;
+		height: 250px;
+		overflow: hidden;
+	}
+
+	.series article div .seriesText img {
+		float: left;
+		width: 49%;
+		margin-right: 2%;
+	}
+
+	.series article div .seriesText img:last-child {
+		margin-right: 0;
+	}
+
+	/*concept*/
+	.concept .conceptVisual {
+		height: 100vh;
+		background: url(../_img/pc_room_concept.jpg) no-repeat 36% center / cover;
+	}
+
+	.concept .conceptVisual .conceptText {
+		top: 50%;
+		left: 5%;
+	}
+
+	.concept .conceptVisual .conceptText h2 {
+		margin-bottom: 20px;
+		font: 40px 'Lato', sans-serif;
+		font-weight: 300;
+	}
+
+	.concept .conceptVisual .conceptText p {
+		margin-bottom: 25px;
+		font-size: 16px;
+		font-weight: 100;
+	}
+
+	.concept .conceptVisual .conceptText a {
+		width: 200px;
+		font-size: 16px;
+	}
+
+	.concept .conceptMenu {
+		padding: 60px 0 120px;
+	}
+
+	.concept .conceptMenu ul li {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+
+	.concept .conceptMenu ul li .conceptImg {
+		position: relative;
+		height: 150px;
+		overflow: hidden;
+	}
+
+	.concept .conceptMenu ul li .conceptImg img {
+		position: absolute;
+		bottom: -50%;
+		width: 100%;
+	}
+
+	.concept .conceptMenu ul li a {
+		height: 31px;
+		margin-top: 5px;
+		font: 26px 'Lato', sans-serif;
+	}
+
+	.concept .conceptMenu ul li p {
+		text-align: right;
+		padding-top: 40px;
+	}
+
+	/*footer*/
+	footer {
+		position: relative;
+		height: 100%;
+		font-size: 11px;
+	}
+
+	footer .inner {
+		padding: 30px 0 40px;
+	}
+
+	footer .inner .footTop:after {
+		top: 40px;
+	}
+
+	footer .inner .footTop .footCopy {
+		float: none;
+		margin-bottom: 5px;
+	}
+
+	footer .inner .footTop .footMenu {
+		float: none;
+	}
+
+	footer .inner .footTop .footMenu a {
+		margin-right: 15px;
+	}
+
+	footer .inner .footTop .footMenu a:last-child {
+		margin-right: 0;
+	}
+
+	footer .inner .footText {
+		padding-top: 10px;
+		line-height: 1.6;
+	}
+}

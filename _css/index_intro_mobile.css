@@ -1,0 +1,184 @@
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+
+  /*common*/
+  .swiper-slide a:before {
+    margin: 15px 0 5px;
+  }
+
+  .mall {
+    width: 100%;
+    height: 50%;
+    background: no-repeat right bottom / contain;
+  }
+
+  .mall .txtGroup {
+    top: 25%;
+    left: 2%;
+  }
+
+  .room {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background: no-repeat left bottom / cover;
+  }
+
+  .room .txtGroup {
+    top: 10%;
+    left: 2%;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 32px;
+  }
+
+  strong {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /*blueHome*/
+  .blueHome .mall {
+    background-position: 100% 50px;
+    top: 0;
+  }
+
+  /*omtanksam*/
+  .omtanksam .mall {
+    top: -30px;
+  }
+
+  .omtanksam .mall span {
+    letter-spacing: 2.5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  /*logo*/
+  .logo {
+    width: 80px;
+    padding: 10px;
+  }
+
+  .swiper-slide a:before {
+    width: 210px;
+    margin: 10px 0 5px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 40px;
+    border-radius: 10px;
+  }
+
+  .pagArea {
+    width: 130px;
+  }
+
+  .pagArea button {
+    top: 12px;
+  }
+
+  .pagArea .pauseBtn,
+  .pagArea .playBtn {
+    width: 15px;
+    height: 15px;
+  }
+
+  .pagArea .pauseBtn .material-icons,
+  .pagArea .playBtn .material-icons {
+    font-size: 28px;
+  }
+
+  .mall {
+    width: 100%;
+    height: 50%;
+    background: no-repeat right bottom / contain;
+  }
+
+  .mall .txtGroup {
+    top: 15%;
+    left: 3%;
+  }
+
+  .room {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background: no-repeat left bottom / cover;
+  }
+
+  .room .txtGroup {
+    top: 10%;
+    left: 3%;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 21px;
+  }
+
+  strong {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+  }
+
+  /*blueHome*/
+  .blueHome .mall {
+    background-position: 100% 30px;
+    top: 0;
+  }
+
+  /*soblekt*/
+  .soblekt .mall {
+    top: 0;
+  }
+
+  .soblekt .mall span {
+    letter-spacing: 0.5px;
+  }
+
+  /*omtanksam*/
+  .omtanksam .mall {
+    top: 0;
+  }
+
+  .omtanksam .mall span {
+    letter-spacing: 1.5px;
+  }
+
+}

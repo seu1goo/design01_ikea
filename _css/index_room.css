@@ -1,0 +1,550 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*reset*/
+body {
+	font: 15px 'Noto Sans KR', sans-serif;
+	color: #585858;
+}
+
+#wrap {
+	width: 100%;
+}
+
+.inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*header*/
+header {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	background: #fff;
+	z-index: 1000;
+}
+
+header .menuBar {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	display: block;
+	font-size: 30px;
+	color: #222;
+}
+
+header .menuClose {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	font-size: 30px;
+	color: #222;
+	display: none;
+}
+
+header .logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 122px;
+	height: 40px;
+}
+
+header .logo img {
+	height: 100%;
+}
+
+header .iconArea {
+	float: right;
+}
+
+header .iconArea li {
+	float: left;
+	margin-left: 20px;
+}
+
+header .iconArea li img {
+	margin-top: 8px;
+}
+
+header .iconArea .search {
+	position: relative;
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+header .iconArea .search .searchI {
+	width: 280px;
+	height: 40px;
+	padding-left: 20px;
+	border-radius: 30px;
+	border: 0;
+	outline: 0;
+	border: 2px solid #959595;
+	background: transparent;
+	box-sizing: border-box;
+}
+
+header .iconArea .search a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+header .iconArea .search a img {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+	margin-top: 0;
+}
+
+header nav {
+	position: fixed;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+
+header nav .gnb {
+	width: 100%;
+	height: 520px;
+	background: #fff;
+	padding: 15px 20px;
+	box-sizing: border-box;
+}
+
+header nav .gnb .gnbTit {
+	width: 100%;
+	height: 40px;
+	font-size: 30px;
+	padding-bottom: 15px;
+}
+
+header nav .gnb .gnbTit:after {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #bbb;
+}
+
+header nav .gnb > li {
+	float: left;
+	width: 50%;
+}
+
+header nav .gnb > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #050621;
+}
+
+header nav .gnb > li > .sub > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+}
+
+header nav .gnb li .sub > li > .subDepth {
+	width: 100%;
+}
+
+header nav .gnb li .sub > li > .subDepth li {
+	float: left;
+	margin: 5px 10px 0 0;
+}
+
+header nav .gnb li .sub > li > .subDepth li + li > a:before {
+	content: '|';
+	font-size: 12px;
+	margin-right: 10px;
+	color: #9b9b9b;
+}
+
+header nav .gnb > li > .sub > li > .subDepth > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+header nav .gnb > li > .sub > li > .subDepth > li > a:hover {
+	text-decoration: underline;
+	color: #10256a;
+}
+
+header nav .gnb .ikeaMenu {
+	width: 100%;
+	margin-top: 40px;
+}
+
+header nav .gnb .ikeaMenu:before {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #ccc;
+	margin-bottom: 15px;
+}
+
+header nav .gnb .ikeaMenu li {
+	position: relative;
+	float: left;
+	width: 356px;
+	height: 150px;
+	margin-right: 20px;
+	background: no-repeat center / cover;
+}
+
+header nav .gnb .ikeaMenu li:last-child {
+	margin-right: 0;
+}
+
+header nav .gnb .ikeaMenu li:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: all 0.6s;
+}
+
+header nav .gnb .ikeaMenu li a {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 150px;
+	text-align: center;
+	text-indent: -9999px;
+	font-size: 20px;
+	color: #fff;
+	z-index: 1000;
+}
+
+header nav .gnb .ikeaMenu li:hover a {
+	text-indent: 0;
+}
+
+header nav .gnb .ikeaMenu li:hover:after {
+	opacity: 1;
+}
+
+header nav .gnb .ikeaMenu li:nth-child(1) {
+	background-image: url(../_img/pc_mall_main.jpg);
+}
+
+header nav .gnb .ikeaMenu li:nth-child(2) {
+	background-image: url(../_img/pc_room_nav_02.jpg);
+}
+
+header nav .gnb .ikeaMenu li:nth-child(3) {
+	background-image: url(../_img/pc_room_nav_03.jpg);
+}
+
+header nav .gnb .ikeaMenu li:nth-child(4) {
+	background-image: url(../_img/pc_mall_store_04.jpg);
+	background-position: 0 -130px;
+}
+
+header nav .gnb .ikeaMenu li:nth-child(5) {
+	background-image: url(../_img/pc_mall_major_01.jpg);
+	background-position: 0 -40px;
+}
+
+/*space*/
+.space .spaceVisual {
+	position: relative;
+	height: 100vh;
+	background: url(../_img/pc_room_space.jpg) no-repeat center / cover;
+}
+
+.space .spaceVisual .spaceText {
+	position: absolute;
+	top: 20%;
+	right: 18%;
+	color: #fff;
+}
+
+.space .spaceVisual .spaceText h2 {
+	margin-bottom: 35px;
+	font: 60px 'Lato', sans-serif;
+	font-weight: 300;
+	text-align: right;
+	letter-spacing: -3px;
+}
+
+.space .spaceVisual .spaceText p {
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 100;
+	text-align: right;
+}
+
+.space .spaceVisual .spaceText a {
+	position: absolute;
+	right: 0;
+	display: block;
+	width: 220px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	transition: all 0.3s;
+}
+
+.space .spaceVisual .spaceText a:hover {
+	background: #fff;
+	color: #222;
+}
+
+.space .spaceMenu {
+	padding: 80px 0 160px;
+}
+
+.space .spaceMenu ul li {
+	position: relative;
+	float: left;
+	margin-right: 40px;
+}
+
+.space .spaceMenu ul li:last-child {
+	margin-right: 0;
+}
+
+.space .spaceMenu ul li a {
+	position: absolute;
+	right: 0;
+	display: block;
+	width: 150px;
+	height: 40px;
+	margin-top: 10px;
+	font: 35px 'Lato', sans-serif;
+	color: #222;
+	background: url(../_img/pc_room_arrow.png) no-repeat bottom right;
+}
+
+.space .spaceMenu ul li p {
+	text-align: right;
+	padding-top: 50px;
+}
+
+/*series*/
+.series {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	margin-bottom: 160px;
+}
+
+.series article {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: no-repeat center / cover;
+}
+
+.series article .rangsutra {
+	background-image: url(../_img/pc_room_series_01.jpg);
+}
+
+.series article .soblekt {
+	background-image: url(../_img/pc_room_series_02.jpg);
+}
+
+.series article .botanisk {
+	background-image: url(../_img/pc_room_series_03.jpg);
+}
+
+.series article .annanstans {
+	background-image: url(../_img/pc_room_series_04.jpg);
+}
+
+.series article div .seriesText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 620px;
+	height: 890px;
+	padding: 60px 20px 40px;
+	box-sizing: border-box;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.series article div .seriesText h3 {
+	font-size: 26px;
+	margin-bottom: 40px;
+	color: #222;
+}
+
+.series article div .seriesText strong {
+	font-size: 20px;
+	line-height: 1.7;
+	letter-spacing: -2px;
+}
+
+.series article div .seriesText p {
+	margin: 25px 0 80px;
+}
+
+.series article div .seriesText a {
+	display: block;
+	width: 220px;
+	height: 40px;
+	line-height: 40px;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 16px;
+	color: #222;
+	border: 1px solid #222;
+	border-radius: 30px;
+	transition: all 0.6s;
+}
+
+.series article div .seriesText a:hover {
+	background: #fff;
+}
+
+/*concept*/
+.concept .conceptVisual {
+	position: relative;
+	height: 100vh;
+	background: url(../_img/pc_room_concept.jpg) no-repeat center / cover;
+}
+
+.concept .conceptVisual .conceptText {
+	position: absolute;
+	top: 20%;
+	left: 18%;
+	color: #fff;
+}
+
+.concept .conceptVisual .conceptText h2 {
+	margin-bottom: 35px;
+	font: 60px 'Lato', sans-serif;
+	font-weight: 300;
+	letter-spacing: -3px;
+}
+
+.concept .conceptVisual .conceptText p {
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.concept .conceptVisual .conceptText a {
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 220px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	transition: all 0.3s;
+}
+
+.concept .conceptVisual .conceptText a:hover {
+	background: #fff;
+	color: #222;
+}
+
+.concept .conceptMenu {
+	padding: 80px 0 160px;
+}
+
+.concept .conceptMenu ul li {
+	position: relative;
+	float: left;
+	margin-right: 30px;
+}
+
+.concept .conceptMenu ul li:last-child {
+	margin-right: 0;
+}
+
+.concept .conceptMenu ul li a {
+	position: absolute;
+	right: 0;
+	display: block;
+	width: 150px;
+	height: 40px;
+	margin-top: 10px;
+	font: 35px 'Lato', sans-serif;
+	color: #222;
+	background: url(../_img/pc_room_arrow.png) no-repeat bottom right;
+}
+
+.concept .conceptMenu ul li p {
+	text-align: right;
+	padding-top: 50px;
+}
+
+/*footer*/
+footer {
+	width: 100%;
+	height: 260px;
+	background: #e6e6e6;
+}
+
+footer .inner {
+	padding-top: 40px;
+}
+
+footer .inner .footTop {
+	position: relative;
+}
+
+footer .inner .footTop:after {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #aaa;
+}
+
+footer .inner .footTop .footCopy {
+	float: left;
+}
+
+footer .inner .footTop .footMenu {
+	float: right;
+}
+
+footer .inner .footTop .footMenu a {
+	margin-right: 15px;
+}
+
+footer .inner .footText {
+	padding-top: 40px;
+	line-height: 1.6;
+}

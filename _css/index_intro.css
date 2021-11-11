@@ -1,0 +1,261 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*reset*/
+body {
+	font: 15px 'Noto Sans KR';
+	color: #222;
+}
+
+/*logo*/
+.logo {
+	position: fixed;
+	width: 120px;
+	padding: 20px;
+	z-index: 1000;
+}
+
+.logo img {
+	width: 100%;
+}
+
+/*swiper-container */
+.swiper-container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.swiper-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide a:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #222;
+	margin: 20px 0 10px;
+}
+
+.swiper-slide a:after {
+	content: '\f105';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	padding-left: 10px;
+}
+
+.pagArea {
+	position: absolute;
+	left: 50%;
+	bottom: 2%;
+	transform: translateX(-50%);
+	width: 180px;
+	height: 30px;
+	z-index: 9;
+}
+
+.swiper-pagination {
+	width: 100%;
+	bottom: 0;
+}
+
+.swiper-pagination-bullet {
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+	background-color: #aaa;
+	opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+	width: 50px;
+	border-radius: 10px;
+	opacity: 1;
+}
+
+.pagArea button {
+	position: absolute;
+	top: 17px;
+	right: 15px;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.pagArea .pauseBtn,
+.pagArea .playBtn {
+	width: 30px;
+	height: 30px;
+	transform: translateY(-50%);
+	outline: none;
+}
+
+.pagArea .playBtn {
+	display: none;
+}
+
+.pagArea .pauseBtn span,
+.pagArea .playBtn span {
+	font-size: 30px;
+	color: #ccc;
+}
+
+.mall {
+	position: absolute;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: no-repeat left center;
+}
+
+.mall .txtGroup {
+	position: absolute;
+	top: 20%;
+	left: 33%;
+}
+
+.room {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: no-repeat left center;
+}
+
+.room .txtGroup {
+	position: absolute;
+	top: 40%;
+	left: 20px;
+}
+
+h2 {
+	font: 50px 'Noto Sans KR', sans-serif;
+	line-height: 55px;
+}
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font: 20px 'Noto Sans KR', sans-serif;
+}
+
+span {
+	display: block;
+	font: 40px 'Lato', sans-serif;
+}
+
+strong {
+	display: block;
+	margin: 15px 0 30px;
+	font: 18px 'Noto Sans KR', sans-serif;
+}
+
+p {
+	width: 360px;
+	margin-bottom: 10px;
+	font: 16px 'Noto Sans KR', sans-serif;
+}
+
+/*blueHome*/
+.blueHome .mall {
+	background-image: url(../_img/pc_intro_mall_01.jpg);
+	top: -30px;
+}
+
+.blueHome .mall span {
+	color: #293f6f;
+	letter-spacing: 0.3px;
+}
+
+.blueHome .mall a {
+	color: #293f6f;
+}
+
+.blueHome .mall a:before {
+	background: #293f6f;
+}
+
+.blueHome .room {
+	background-image: url(../_img/pc_intro_room_01.jpg);
+}
+
+.blueHome .room {
+	color: #ffe400;
+}
+
+.blueHome .room a:before {
+	background: #ffe400;
+}
+
+/*soblekt*/
+.soblekt .mall {
+	background-image: url(../_img/pc_intro_mall_02.jpg);
+	top: -30px;
+}
+
+.soblekt .mall span {
+	color: #015f17;
+	letter-spacing: 1px;
+}
+
+.soblekt .mall a {
+	color: #015f17;
+}
+
+.soblekt .mall a:before {
+	background: #015f17;
+}
+
+.soblekt .room {
+	background-image: url(../_img/pc_intro_room_02.jpg);
+}
+
+.soblekt .room {
+	color: #ff5028;
+}
+
+.soblekt .room a:before {
+	background: #ff5028;
+}
+
+/*omtanksam*/
+.omtanksam .mall {
+	background-image: url(../_img/pc_intro_mall_03.jpg);
+}
+
+.omtanksam .mall span {
+	color: #826432;
+	letter-spacing: 3px;
+}
+
+.omtanksam .mall a {
+	color: #826432;
+}
+
+.omtanksam .mall a:before {
+	background: #826432;
+}
+
+.omtanksam .room {
+	background-image: url(../_img/pc_intro_room_03.jpg);
+}
+
+.omtanksam .room {
+	color: #fff;
+}
+
+.omtanksam .room a:before {
+	background: #fff;
+}
